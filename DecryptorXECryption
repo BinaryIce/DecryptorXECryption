@@ -1,0 +1,37 @@
+#!/bin/sh 
+
+# Use the command <cat [encrypted text file] |./Formater |./DecrypterXECryption 
+# More then likely you will need to change the keybit to the appropriate value
+# Author: Binary Ice
+
+# This is open source software meant to decrypt a old encrytion scheme with a weakness in the implemetation 
+
+
+
+
+
+while read first second third 
+do
+
+
+#Compiling values to decrypt a email simple addition
+
+z=`expr $first + $second + $third`
+
+export z
+
+# Redirects to a file named Compiled
+
+
+y=`expr $z - 762`
+
+
+# Prints the ascii value of the numbers to stdout
+printf \\$(printf "%o" $y)
+
+done
+
+
+
+
+
