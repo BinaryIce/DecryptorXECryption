@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+Keybit=$(sort Compiled4 | uniq -c | sort -n | tail -1)
+
+
+echo "Keybit Found !" $Keybit 
+
